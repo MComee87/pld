@@ -1,171 +1,194 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/index-stylesheet.css">
+  </head>
+
+  <body>
     
-    
-
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
-	<link rel="stylesheet" href="css/index-stylesheet.css">
-</head>
-
-<body>
-    <!-- <div class="container">
-        <div class="row">
-            <div class="home-button-block">
-                
-                    <img class="img-responsive ui-draggable-handle button-img" src="images/home-button.png"> 
-                        
-            </div>
-            <div class="contact-button-block">
-                
-                    <img class="img-responsive ui-draggable-handle button-img" src="images/contact-button.png"> 
-                        
-            </div>
-            <div class="main-img-block">
-                
-                    <img class="img-responsive ui-draggable-handle main-img" src="images/pld-logo-1.png">        
-                
-            </div>
+    <div class="container" style="background-color: #ff0000; padding-top: 5px; padding-bottom: 5px; margin-top: 10px;">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <select id="changeBackground"> 
+              <option>Select a background</option>
+              <option value="images/carbon-fiber-1.png">Carbon Fiber 1</option>
+              <option value="images/carbon-fiber-2.png">Carbon Fiber 2</option>
+              <option value="images/carbon-fiber-3.png">Carbon Fiber 3</option>
+              <option value="images/carbon-fiber-4.png">Carbon Fiber 4</option>
+              <option value="images/carbon-fiber-5.png">Carbon Fiber 5</option>
+              <option value="images/carbon-fiber-6.png">Carbon Fiber 6</option>
+              <option value="images/carbon-fiber-7.png">Carbon Fiber 7</option>
+              <option value="images/carbon-fiber-8.png">Carbon Fiber 8</option>
+              <option value="images/carbon-fiber-9.png">Carbon Fiber 9</option>
+              <option value="images/carbon-fiber-10.png">Carbon Fiber 10</option> 
+          </select>
         </div>
-    </div> -->
-<div style="background-color: #ff0000; padding-top: 5px; padding-bottom: 10px;">
-
-<p style="color: white; left: 10%; display: inline-block"> choose a background image</p>
-<select id="backgrounds" style ="display: inline-block"> 
-    <option>Select a background</option>
-    <option value="images/carbon-fiber-1.png">Carbon Fiber 1</option>
-    <option value="images/carbon-fiber-2.png">Carbon Fiber 2</option>
-    <option value="images/carbon-fiber-3.png">Carbon Fiber 3</option>
-    <option value="images/carbon-fiber-4.png">Carbon Fiber 4</option>
-    <option value="images/carbon-fiber-5.png">Carbon Fiber 5</option>
-    <option value="images/carbon-fiber-6.png">Carbon Fiber 6</option>
-    <option value="images/carbon-fiber-7.png">Carbon Fiber 7</option>
-    <option value="images/carbon-fiber-8.png">Carbon Fiber 8</option>
-    <option value="images/carbon-fiber-9.png">Carbon Fiber 9</option>
-    <option value="images/carbon-fiber-10.png">Carbon Fiber 10</option> 
-</select>
-</div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <select id="changeLogo">
+              <option>Select a Logo</option>
+              <option value="images/pld-logo-1.png">Logo 1</option>
+              <option value="images/pld-logo-2.png">Logo 2</option>
+          </select>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <select id="backgrounds"> 
+              <option>Select a background</option>
+              <option value="images/carbon-fiber-1.png">Carbon Fiber 1</option>
+              <option value="images/carbon-fiber-2.png">Carbon Fiber 2</option>
+              <option value="images/carbon-fiber-3.png">Carbon Fiber 3</option>
+              <option value="images/carbon-fiber-4.png">Carbon Fiber 4</option>
+              <option value="images/carbon-fiber-5.png">Carbon Fiber 5</option>
+              <option value="images/carbon-fiber-6.png">Carbon Fiber 6</option>
+              <option value="images/carbon-fiber-7.png">Carbon Fiber 7</option>
+              <option value="images/carbon-fiber-8.png">Carbon Fiber 8</option>
+              <option value="images/carbon-fiber-9.png">Carbon Fiber 9</option>
+              <option value="images/carbon-fiber-10.png">Carbon Fiber 10</option> 
+          </select>
+        </div>
+      </div>
+    </div>
 
 
 
     <script type="text/javascript">
 
-     var w = document.documentElement.clientWidth;
-     var h = document.documentElement.clientHeight;
+      var w = document.documentElement.clientWidth;
+      var h = document.documentElement.clientHeight;
 
-        HTMLElement.prototype.centre = function(){
-  this.style.position = 'absolute';
-  this.style.left = (w - this.offsetWidth)/2 + this.offsetWidth/6 + 'px';
-  this.style.top = (h - this.offsetHeight)/2 +
-                   window.pageYOffset + 'px';
-}
-
-var mainImg = new Image(),
-    body = document.getElementsByTagName("body")[0];
-mainImg.src = "images/pld-logo.png";
-mainImg.id = "mainImage";
-mainImg.onload = function(){
-      if (h <= w) {
-          this.style.height = h*2/3 + 'px';
-      } else {
-          this.style.width = w*2/3 + 'px';
+      HTMLElement.prototype.centre = function(){
+          this.style.position = 'absolute';
+          this.style.left = (w - this.offsetWidth)/2 + this.offsetWidth/6 + 'px';
+          this.style.top = (h - this.offsetHeight)/2 +
+                 window.pageYOffset + 'px';
       }
-  this.centre();
-}
 
-body.appendChild(mainImg);
+      var mainImg = new Image(),
+          body = document.getElementsByTagName("body")[0];
+          mainImg.src = "images/pld-logo-1.png";
+          mainImg.id = "mainImage";
+      mainImg.onload = function(){
+          if (h <= w) {
+              this.style.height = h*2/3 + 'px';
+          } else {
+              this.style.width = w*2/3 + 'px';
+          }
+
+          this.centre();
+      }
+
+      body.appendChild(mainImg);
 
 
 
+      var mainImageW = document.getElementById("mainImage").width;
+      var mainImageH = document.getElementById("mainImage").height;
 
-  var mainImageW = document.getElementById("mainImage").width;
-  var mainImageH = document.getElementById("mainImage").height;
-  
 
- HTMLElement.prototype.marginCentre = function(){
-  this.style.position = 'absolute';
-  this.style.left = ((w/2 - mainImageW/2)/2 - this.offsetWidth) + 'px';
-}
+    
 
- HTMLElement.prototype.aboutCentre = function(){
-  this.style.position = 'absolute';
-  this.style.left = ((w/2 - mainImageW/2)/2 - this.offsetWidth*1.125) + 'px';
-}
+       HTMLElement.prototype.marginCentre = function(){
+        this.style.position = 'absolute';
+        this.style.left = ((w/2 - mainImageW/2)/2 - this.offsetWidth) + 'px';
+      }
 
- HTMLElement.prototype.contactHeight = function(){
- this.style.top = ((h/2 - mainImageH/2) - this.offsetHeight/2) + this.offsetHeight*2.5  + 'px';
-}
+       HTMLElement.prototype.aboutCentre = function(){
+        this.style.position = 'absolute';
+        this.style.left = ((w/2 - mainImageW/2)/2 - this.offsetWidth*1.125) + 'px';
+      }
 
- HTMLElement.prototype.aboutHeight = function(){
- this.style.top = ((h/2 - mainImageH/2) - this.offsetHeight/2) + 'px';
-}
+       HTMLElement.prototype.contactHeight = function(){
+       this.style.top = ((h/2 - mainImageH/2) - this.offsetHeight/2) + this.offsetHeight*2.5  + 'px';
+      }
 
- HTMLElement.prototype.projectsHeight = function(){
- this.style.top = ((h/2 - mainImageH/2) - this.offsetHeight/2) - this.offsetHeight*2.5 + 'px';
-}
+       HTMLElement.prototype.aboutHeight = function(){
+       this.style.top = ((h/2 - mainImageH/2) - this.offsetHeight/2) + 'px';
+      }
 
-var contactButton = new Image(),
-    body = document.getElementsByTagName("body")[0];
-contactButton.src = "images/contact-button.png";
-contactButton.onclick = function() { window.location.href = 'contact.html'; };
-contactButton.id = "contact";
-contactButton.onload = function(){
-  this.marginCentre();
-  this.contactHeight();
-}
+       HTMLElement.prototype.projectsHeight = function(){
+       this.style.top = ((h/2 - mainImageH/2) - this.offsetHeight/2) - this.offsetHeight*2.5 + 'px';
+      }
 
-var aboutButton = new Image(),
-    body = document.getElementsByTagName("body")[0];
-aboutButton.src = "images/about-button.png";
-aboutButton.onclick = function() { window.location.href = 'about.html'; };
-aboutButton.id = "about";
-aboutButton.onload = function(){
-  this.aboutCentre();
-  this.aboutHeight();
-}
 
-var projectsButton = new Image(),
-    body = document.getElementsByTagName("body")[0];
-projectsButton.src = "images/projects-button.png";
-projectsButton.onclick = function() { window.location.href = 'projects.html'; };
-projectsButton.id = "projects";
-projectsButton.onload = function(){
-  this.marginCentre();
-  this.projectsHeight();
-}
 
-body.appendChild(contactButton);
-body.appendChild(aboutButton);
-body.appendChild(projectsButton);
+      var contactButton = new Image(),
+          body = document.getElementsByTagName("body")[0];
+      contactButton.src = "images/contact-button.png";
+      contactButton.onclick = function() { window.location.href = 'contact.html'; };
+      contactButton.id = "contact";
+      contactButton.onload = function(){
+        this.marginCentre();
+        this.contactHeight();
+      }
+
+      var aboutButton = new Image(),
+          body = document.getElementsByTagName("body")[0];
+      aboutButton.src = "images/about-button.png";
+      aboutButton.onclick = function() { window.location.href = 'about.html'; };
+      aboutButton.id = "about";
+      aboutButton.onload = function(){
+        this.aboutCentre();
+        this.aboutHeight();
+      }
+
+      var projectsButton = new Image(),
+          body = document.getElementsByTagName("body")[0];
+      projectsButton.src = "images/projects-button.png";
+      projectsButton.onclick = function() { window.location.href = 'projects.html'; };
+      projectsButton.id = "projects";
+      projectsButton.onload = function(){
+        this.marginCentre();
+        this.projectsHeight();
+      }
+
+      body.appendChild(contactButton);
+      body.appendChild(aboutButton);
+      body.appendChild(projectsButton);
 
 
     </script>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
 
-<script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
 
-$(document).ready(function()
-{
-    var body = $(document.body);
-    $('#backgrounds').bind('change', function(event){
-        var bg = $(this).val();
-        if(bg == null || typeof bg === 'undefined' || $.trim(bg) === '')
-            body.css('background-image', '');
-        else
-            body.css('background-image', "url('" + bg + "')");
-    });
-});
+    <!-- code to change background -->
 
-</script>
+    <script>
 
-</body>
+      $(document).ready(function()
+      {
+          var body = $(document.body);
+          $('#changeBackground').bind('change', function(event){
+              var bg = $(this).val();
+              if(bg == null || typeof bg === 'undefined' || $.trim(bg) === '')
+                  body.css('background-image', '');
+              else
+                  body.css('background-image', "url('" + bg + "')");
+          });
+      });
+
+    </script>
+
+    <!-- code to change logo -->
+
+    <script>
+      
+      $('#changeLogo').change(function(){
+        $('#mainImage')[0].src = this.value;
+      });
+
+    </script>
+
+  </body>
 
 </html>
