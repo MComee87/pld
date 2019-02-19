@@ -45,7 +45,7 @@
         HTMLElement.prototype.centre = function(){
   this.style.position = 'absolute';
   this.style.left = (w - this.offsetWidth)/2 + 'px';
-  this.style.top = (h - this.offsetHeight)/4 +
+  this.style.top = (h - this.offsetHeight)/6 +
                    window.pageYOffset + 'px';
 }
 
@@ -55,9 +55,9 @@ mainImg.src = "images/about-button.png";
 mainImg.id = "mainImage";
 mainImg.onload = function(){
       if (h <= w) {
-          this.style.height = h/2 + 'px';
+          this.style.height = h/3 + 'px';
       } else {
-          this.style.width = w/2 + 'px';
+          this.style.width = w/3 + 'px';
       }
   this.centre();
 }
