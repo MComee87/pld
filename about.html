@@ -54,7 +54,7 @@ var mainImg = new Image(),
 mainImg.src = "images/about-button.png";
 mainImg.id = "mainImage";
 mainImg.onload = function(){
-      if (h <= w) {
+      if (h >= w) {
           this.style.height = h*2/3 + 'px';
       } else {
           this.style.width = w*2/3 + 'px';
