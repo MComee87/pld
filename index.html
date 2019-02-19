@@ -35,6 +35,21 @@
             </div>
         </div>
     </div> -->
+
+<select id="backgrounds">
+    <option>Select a background</option>
+    <option value="images/carbon-fiber-1.png">Carbon Fiber 1</option>
+    <option value="images/carbon-fiber-2.png">Carbon Fiber 2</option>
+    <option value="images/carbon-fiber-3.png">Carbon Fiber 3</option>
+    <option value="images/carbon-fiber-4.png">Carbon Fiber 4</option>
+    <option value="images/carbon-fiber-5.png">Carbon Fiber 5</option>
+    <option value="images/carbon-fiber-6.png">Carbon Fiber 6</option>
+    <option value="images/carbon-fiber-7.png">Carbon Fiber 7</option>
+    <option value="images/carbon-fiber-8.png">Carbon Fiber 8</option>
+    <option value="images/carbon-fiber-9.png">Carbon Fiber 9</option>
+    <option value="images/carbon-fiber-10.png">Carbon Fiber 10</option> 
+</select>
+
     <script type="text/javascript">
 
      var w = document.documentElement.clientWidth;
@@ -129,6 +144,22 @@ body.appendChild(projectsButton);
     </script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
+
+<script>
+
+$(document).ready(function()
+{
+    var body = $(document.body);
+    $('#backgrounds').bind('change', function(event){
+        var bg = $(this).val();
+        if(bg == null || typeof bg === 'undefined' || $.trim(bg) === '')
+            body.css('background-image', '');
+        else
+            body.css('background-image', "url('" + bg + "')");
+    });
+});
+
+</script>
 
 </body>
 
