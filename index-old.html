@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <link rel="stylesheet" href="css/index-stylesheet.css">
+  </head>
+
+  <body>
+    
+    <div class="container" style="background-color: #ff0000; padding-top: 5px; padding-bottom: 5px; margin-top: 10px; min-width: 100% !important;">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <select id="changeBackground"> 
+              <option value="images/carbon-fiber-1.png">Carbon Fiber 1</option>
+              <option value="images/carbon-fiber-2.png">Carbon Fiber 2</option>
+              <option value="images/carbon-fiber-3.png">Carbon Fiber 3</option>
+              <option value="images/carbon-fiber-4.png">Carbon Fiber 4</option>
+              <option value="images/carbon-fiber-5.png">Carbon Fiber 5</option>
+              <option value="images/carbon-fiber-6.png">Carbon Fiber 6</option>
+              <option value="images/carbon-fiber-7.png">Carbon Fiber 7</option>
+              <option value="images/carbon-fiber-8.png">Carbon Fiber 8</option>
+              <option value="images/carbon-fiber-9.png">Carbon Fiber 9</option>
+              <option value="images/carbon-fiber-10.png">Carbon Fiber 10</option> 
+          </select>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <select id="changeLogo">
+              <option value="images/pld-logo-1.png">Logo 1</option>
+              <option value="images/pld-logo-2.png">Logo 2</option>
+              <option value="images/pld-logo-3.png">Logo 3</option>
+          </select>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <select id="changeAnimation"> 
+              <option value="bounce">bounce</option>
+              <option value="flash">flash</option>
+              <option value="pulse">pulse</option>
+              <option value="rubberBand">rubberBand</option>
+              <option value="shake">shake</option>
+              <option value="headShake">headShake</option>
+              <option value="swing">swing</option>
+              <option value="tada">tada</option>
+              <option value="wobble">wobble</option>
+              <option value="jello">jello</option>
+              <option value="bounceIn">bounceIn</option>
+              <option value="bounceInDown">bounceInDown</option>
+              <option value="bounceInLeft">bounceInLeft</option>
+              <option value="bounceInRight">bounceInRight</option>
+              <option value="bounceInUp">bounceInUp</option>
+              <option value="bounceOut">bounceOut</option>
+              <option value="bounceOutDown">bounceOutDown</option>
+              <option value="bounceOutLeft">bounceOutLeft</option>
+              <option value="bounceOutRight">bounceOutRight</option>
+              <option value="bounceOutUp">bounceOutUp</option>
+              <option value="fadeIn">fadeIn</option>
+              <option value="fadeInDown">fadeInDown</option>
+              <option value="fadeInDownBig">fadeInDownBig</option>
+              <option value="fadeInLeftBig">fadeInLeftBig</option>
+              <option value="fadeInRight">fadeInRight</option>
+              <option value="fadeInRightBig">fadeInRightBig</option>
+              <option value="fadeInUp">fadeInUp</option>
+              <option value="fadeInUpBig">fadeInUpBig</option>
+              <option value="fadeOut">fadeOut</option>
+              <option value="fadeOutDown">fadeOutDown</option>
+              <option value="fadeOutDownBig">fadeOutDownBig</option>
+              <option value="fadeOutLeft">fadeOutLeft</option>
+              <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+              <option value="fadeOutRight">fadeOutRight</option>
+              <option value="fadeOutRightBig">fadeOutRightBig</option>
+              <option value="fadeOutUp">fadeOutUp</option>
+              <option value="fadeOutUpBig">fadeOutUpBig</option>
+              <option value="flipInX">flipInX</option>
+              <option value="flipInY">flipInY</option>
+              <option value="flipOutX">flipOutX</option>
+              <option value="flipOutY">flipOutY</option>
+              <option value="lightSpeedIn">lightSpeedIn</option>
+              <option value="lightSpeedOut">lightSpeedOut</option>
+              <option value="rotateIn">rotateIn</option>
+              <option value="rotateInDownLeft">rotateInDownLeft</option>
+              <option value="rotateInDownRight">rotateInDownRight</option>
+              <option value="rotateInUpLeft">rotateInUpLeft</option>
+              <option value="rotateInUpRight">rotateInUpRight</option>
+              <option value="rotateOut">rotateOut</option>
+              <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+              <option value="rotateOutDownRight">rotateOutDownRight</option>
+              <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+              <option value="rotateOutUpRight">rotateOutUpRight</option>
+              <option value="hinge">hinge</option>
+              <option value="jackInTheBox">jackInTheBox</option>
+              <option value="rollIn">rollIn</option>
+              <option value="rollOut">rollOut</option>
+              <option value="zoomIn">zoomIn</option>
+              <option value="zoomInDown">zoomInDown</option>
+              <option value="zoomInLeft">zoomInLeft</option>
+              <option value="zoomInRight">zoomInRight</option>
+              <option value="zoomInUp">zoomInUp</option>
+              <option value="zoomOut">zoomOut</option>
+              <option value="zoomOutDown">zoomOutDown</option>
+              <option value="zoomOutLeft">zoomOutLeft</option>
+              <option value="zoomOutRight">zoomOutRight</option>
+              <option value="zoomOutUp">zoomOutUp</option>
+              <option value="slideInDown">slideInDown</option>
+              <option value="slideInLeft">slideInLeft</option>
+              <option value="slideInRight">slideInRight</option>
+              <option value="slideInUp">slideInUp</option>
+              <option value="slideOutDown">slideOutDown</option>
+              <option value="slideOutLeft">slideOutLeft</option>
+              <option value="slideOutRight">slideOutRight</option>
+              <option value="slideOutUp">slideOutUp</option>
+              <option value="heartBeat">heartBeat</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+      var w = document.documentElement.clientWidth;
+      var h = document.documentElement.clientHeight;
+
+      HTMLElement.prototype.centre = function(){
+          this.style.position = 'absolute';
+          this.style.left = (w - this.offsetWidth)/2 + this.offsetWidth/6 + 'px';
+          this.style.top = (h - this.offsetHeight)/2 +
+                 window.pageYOffset + 'px';
+      }
+
+      var mainImg = new Image(),
+          body = document.getElementsByTagName("body")[0];
+          mainImg.src = "images/pld-logo-1.png";
+          mainImg.id = "mainImage";
+      mainImg.onload = function(){
+          if (h <= w) {
+              this.style.height = h*2/3 + 'px';
+          } else {
+              this.style.width = w*2/3 + 'px';
+          }
+
+          this.centre();
+      }
+
+      body.appendChild(mainImg);
+
+
+
+      var mainImageW = document.getElementById("mainImage").width;
+      var mainImageH = document.getElementById("mainImage").height;
+
+
+    
+
+       HTMLElement.prototype.marginCentre = function(){
+        this.style.position = 'absolute';
+        this.style.left = ((w/2 - mainImageW/2)/2 - this.offsetWidth) + 'px';
+      }
+
+       HTMLElement.prototype.aboutCentre = function(){
+        this.style.position = 'absolute';
+        this.style.left = ((w/2 - mainImageW/2)/2 - this.offsetWidth*1.125) + 'px';
+      }
+
+       HTMLElement.prototype.contactHeight = function(){
+       this.style.top = ((h/2 - mainImageH/2) - this.offsetHeight/2) + this.offsetHeight*2.5  + 'px';
+      }
+
+       HTMLElement.prototype.aboutHeight = function(){
+       this.style.top = ((h/2 - mainImageH/2) - this.offsetHeight/2) + 'px';
+      }
+
+       HTMLElement.prototype.projectsHeight = function(){
+       this.style.top = ((h/2 - mainImageH/2) - this.offsetHeight/2) - this.offsetHeight*2.5 + 'px';
+      }
+
+
+
+      var contactButton = new Image(),
+          body = document.getElementsByTagName("body")[0];
+      contactButton.src = "images/contact-button.png";
+      contactButton.onclick = function() { window.location.href = 'contact.html'; };
+      contactButton.id = "contact";
+      contactButton.onload = function(){
+        this.marginCentre();
+        this.contactHeight();
+      }
+
+      var aboutButton = new Image(),
+          body = document.getElementsByTagName("body")[0];
+      aboutButton.src = "images/about-button.png";
+      aboutButton.onclick = function() { window.location.href = 'about.html'; };
+      aboutButton.id = "about";
+      aboutButton.onload = function(){
+        this.aboutCentre();
+        this.aboutHeight();
+      }
+
+      var projectsButton = new Image(),
+          body = document.getElementsByTagName("body")[0];
+      projectsButton.src = "images/projects-button.png";
+      projectsButton.onclick = function() { window.location.href = 'projects.html'; };
+      projectsButton.id = "projects";
+      projectsButton.onload = function(){
+        this.marginCentre();
+        this.projectsHeight();
+      }
+
+      body.appendChild(contactButton);
+      body.appendChild(aboutButton);
+      body.appendChild(projectsButton);
+
+
+    </script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- code to change background -->
+
+    <script>
+
+      $(document).ready(function()
+      {
+          var body = $(document.body);
+          $('#changeBackground').bind('change', function(event){
+              var bg = $(this).val();
+              if(bg == null || typeof bg === 'undefined' || $.trim(bg) === '')
+                  body.css('background-image', '');
+              else
+                  body.css('background-image', "url('" + bg + "')");
+          });
+      });
+
+    </script>
+
+    <!-- code to change logo -->
+
+    <script>
+      
+      $('#changeLogo').change(function(){
+        $('#mainImage')[0].src = this.value;
+      });
+
+    </script>
+
+    <!-- code to change logo animation -->
+
+    <script>
+
+      $('#changeAnimation').change(function(){
+        var animator = document.getElementById("mainImage");
+        var oldAnimation = document.getElementById("mainImage").classList.item(2);
+        animator.classList.remove(oldAnimation);
+        animator.classList.add("animated", "infinite", this.value);
+      });
+
+    </script>
+
+
+
+  </body>
+
+</html>
