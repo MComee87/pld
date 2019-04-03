@@ -7,10 +7,6 @@ html {
     text-align: center;
 }
 
-html > body {
-    background-image: url("https://pld.netlify.com/images/carbon-fiber-1.png");
-}
-
 .main-img {
 	display: block;
 	margin-left: auto;
