@@ -21,7 +21,7 @@ body {
 .dark_blue {
   background-image: url("/images/carbon-fiber-6.png");
   border-image: repeating-linear-gradient(30deg, #70706F, #7D7D7A, #8E8D8D, #A1A2A3, #B3B6B5, #BEC0C2 20px) 60;
-  border-image-width: 10px;
+  border-image-width: 3px;
   border-radius: 5px;
 }
 
