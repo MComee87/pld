@@ -19,11 +19,11 @@ body {
 }
 
 .dark_blue {
-  background-image: url("./images/carbon-fiber-1.png");
+  background-image: url("/images/carbon-fiber-1.png");
 }
 
 .light_blue {
-    background-image: url("./images/carbon-fiber-10.png");
+  background-image: url("/images/carbon-fiber-10.png");
 }
 
 .green {
